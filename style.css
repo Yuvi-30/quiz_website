@@ -331,8 +331,8 @@ section .option_list .option.disabled{
     flex-direction: column;
     min-height: 100px;
     font-size: 25px;
-    top: 47%;
-    left: 37%;
+    top: 44%;
+    left: 39%;
     text-align: center;
     background-color: rgb(293 196 203);
     border-radius: 20px;
@@ -349,7 +349,7 @@ section .option_list .option.disabled{
 .result_box .score_text span{
     display: flex;
     margin: 10px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
 }
 
