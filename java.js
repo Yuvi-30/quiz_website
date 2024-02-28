@@ -4,14 +4,8 @@ const back = document.querySelector('.exit');
 const quiz = document.querySelector('.head');
 const main = document.querySelector('.main');
 const ok = document.querySelector('.gogo');
-
 const quit1 = document.querySelector('.quit');
-const quit2 = document.querySelector('.quit2');
-
 const cont1 = document.querySelector('.container1');
-
-const next1 = document.querySelector('.next1');
-const prev2 = document.querySelector('.prev2');
 
 let que_count = 0;
 let que_numb = 1;
@@ -28,7 +22,6 @@ back.onclick = () => {
     main.classList.remove('active');
 
 }
-
 
 ok.onclick = () => {
 
@@ -73,7 +66,6 @@ prev_btn.onclick = () => {
 
 }
 
-
 function showQuetions(index) {
     const que_text = document.querySelector(".que_text");
     const option_list = document.querySelector(".option_list");
@@ -84,31 +76,7 @@ function showQuetions(index) {
         + '<div class="option"><span>' + questions[index].options[3] + '</span></div>';
     que_text.innerHTML = que_tag; //adding new span tag inside que_tag
     option_list.innerHTML = option_tag; //adding new div tag inside option_tag
-
-    const option = option_list.querySelectorAll(".option");
-
-    // set onclick attribute to all available options
-    // for (i = 0; i < option.length; i++) {
-    //     option[i].setAttribute("onclick", "optionSelected(this)");
-    // }
-
-
 }
-//getting correct answer from array
-// function optionSelected(answer) {
-//     let userAns = answer.textContent; //getting user selected option
-//     let correcAns = questions[que_count].answer;
-//     for (i = 0; i < option.length; i++) {
-//         const option = option_list.querySelectorAll(".option");
-
-//         option[i].onclick = () => {
-//             if (userAns == correcAns) {
-//                 userScore += 1;
-//                 console.log(userScore);
-//             }
-//         }
-//     }
-// }
 
 function Quetionno(index) {
     const quesno = document.querySelector(".quesno");
@@ -122,4 +90,3 @@ function queCounter(index) {
     let totalQueCounTag = '<span><p>' + index + '</span> of <span>' + questions.length + '</p></span>';
     total_que.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
-
