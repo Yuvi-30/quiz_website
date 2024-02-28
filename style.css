@@ -335,7 +335,7 @@ section .option_list .option.disabled{
     left: 39%;
     text-align: center;
     background-color: rgb(293 196 203);
-    border-radius: 20px;
+    border-radius: 10px;
     border: 3px solid #000;
     opacity: 0;
     pointer-events: none;
