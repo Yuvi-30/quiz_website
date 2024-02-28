@@ -7,7 +7,7 @@ let questions = [
       "Hyper Text Preprocessor",
       "Hyper Text Markup Language",
       "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Hyper Multi Language"
     ]
   },
     {
