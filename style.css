@@ -2,11 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
+
 .waste{
 position: absolute;
-
 }
 
 .box {
@@ -18,7 +17,6 @@ position: absolute;
     bottom: 0;
     left: 0;
     animation: movement 4.2s linear 1;
-    /* animation:  animateY1 1s ease-out 1 alternate; */
 }
 
 .box1 {
@@ -30,7 +28,6 @@ position: absolute;
     bottom: 0;
     left: 0;
     animation: movement 4.5s linear 1;
-    /* animation:  animateY1 1s ease-out 1 alternate; */
 }
 
 .box2{
@@ -113,10 +110,7 @@ body {
 }
 
 .main {
-    background-color:black ;
-    /* background: linear-gradient(45deg, transparent, rgb(256 224 214), transparent); */
     background: linear-gradient(90deg, rgb(274 177 187), transparent);
-    /* rgb(133 191 186) */
     border-radius: 20px;
     animation: animateX 1s 1 ease-out;
 }
@@ -131,12 +125,12 @@ body {
     padding-top: 10px;
 }
 
-.head a {
+.head div {
 
     color: #000;
-    font-size: 38px;
+    font-size: 46px;
     margin-top: 10px;
-    padding: 20px;
+    padding: 25px 54px 54px 54px;
     font-weight: 800;
     text-decoration: none;
 
@@ -178,20 +172,12 @@ body {
     width: 110px;
     height: 35px;
     background-color: #fff;
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .btn:hover {
     background-color: rgb(293 196 203);
 }
-
-/* .main{
-    background: url("RE4wyTK.jpeg") no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
-
-
 
 
 .pop {
@@ -215,8 +201,6 @@ body {
     margin: 5px;
 }
 
-
-
 .quesno {
     float: inline-start;
     font-size: 50px;
@@ -235,13 +219,13 @@ body {
 }
 
 .above{
-    border-top: 3px solid #00e68a;
+    border-top: 3px solid rgb(293 196 203);
     margin-top: 40px;
     width: 100vw;
 }
 
 .down{
-    border-top: 3px solid #00e68a;
+    border-top: 3px solid rgb(293 196 203);
     margin-top: 3%;
     width: 100vw;
 }
@@ -251,30 +235,14 @@ body {
     margin: 50px;
 }
 
-.ans {
-    margin: 100px;
-    font-size: 21px;
-    
-}
-
 .option{
     margin: 5px;
-}
-
-.tick {
-    display: block;
-    margin: 5px;
-
 }
 
 .next{
     position:absolute;
     top: 90%;
     left: 90%;
-}
-.next.hide{
-    opacity: 0;
-    pointer-events: none;
 }
 
 .prev{
@@ -296,7 +264,6 @@ body {
     font-size: large;
 }
 
-
 .container1 {
     position: absolute;
     top: 0%;
@@ -309,15 +276,15 @@ body {
 }
 
 .container1.active {
-    background-color: #fff;
+    background-color: rgb(38, 37, 37);
     opacity: 1;
     pointer-events: all;
+    color: #fff;
 }
-
 
 section{
     padding: 70px 30px 20px 30px;
-    background: #fff;
+    background: rgb(38, 37, 37);
 }
 
 section .que_text{
@@ -331,8 +298,9 @@ section .option_list{
 }
 
 section .option_list .option{
-    background: #00e68a;
-    border: 2px solid #00ff99;
+    background: rgb(293 196 203);
+    border: 2px solid rgb(293 196 203);
+    color: black;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 17px;
@@ -349,7 +317,5 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #009900;
-    background: #99ff99;
-    border: 1px solid #008000;
+    background: rgb(249, 173, 173);
 }
