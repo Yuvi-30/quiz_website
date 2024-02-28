@@ -179,7 +179,7 @@ body {
     background-color: rgb(293 196 203);
 }
 
-
+.result_box,
 .pop {
     position: absolute;
     top: 47%;
@@ -192,6 +192,7 @@ body {
     pointer-events: none;
 }
 
+.result_box.active,
 .pop.active {
     opacity: 1;
     pointer-events: all;
@@ -207,14 +208,6 @@ body {
     font-weight: 900;
     margin: 45px;
     margin-left: 60px;
-    padding: 10px;
-}
-
-.score{
-    float: inline-end;
-    font-size: 20px;
-    font-weight: 100;
-    margin: 65px;
     padding: 10px;
 }
 
@@ -271,6 +264,7 @@ body {
     width: 100vw;
     height: 100vh;
     transition: .5s ease-in;
+    border: 3px solid rgb(249, 173, 173);
     opacity: 0;
     pointer-events: none;
 }
@@ -318,4 +312,48 @@ section .option_list .option:last-child{
 
 section .option_list .option:hover{
     background: rgb(249, 173, 173);
+}
+section .option_list .option.correct{
+    background-color: green;
+}
+section .option_list .option.incorrect{
+    background-color: red;
+}
+
+section .option_list .option.disabled{
+    pointer-events: none;
+}
+
+.result_box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+    font-size: 25px;
+    top: 47%;
+    left: 37%;
+    text-align: center;
+    background-color: rgb(293 196 203);
+    border-radius: 20px;
+    border: 3px solid #000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.result_box.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.result_box .score_text span{
+    display: flex;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result_box .score_text span p{
+    padding: 4px;
+    font-weight: 600;
 }
