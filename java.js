@@ -51,7 +51,7 @@ next_btn.onclick = () => {
         Quetionno(que_numb);
     }
     else if (que_numb == 5) {
-        next_btn.classList.remove('hide');
+        window.location.reload();
     }
 }
 
