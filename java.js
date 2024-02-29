@@ -106,9 +106,9 @@ function queCounter(index) {
 
 function optionSelected(answer){
     let userAns = answer.textContent; //getting user selected option
-    let correcAns = questions[que_count].answer; 
-    if(userAns == correcAns){
-        console.log('correcAns');
+    let correctAns = questions[que_count].answer; 
+    if(userAns == correctAns){
+        console.log('correctAns');
         userScore += 1;
         answer.classList.add("correct");
     }
